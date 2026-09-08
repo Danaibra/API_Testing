@@ -5,7 +5,7 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import org.junit.jupiter.api.BeforeAll;
 
-public class BaseTest {
+public abstract class BaseTest {
     protected static final String BASE_URI = "https://jsonplaceholder.typicode.com";
     @BeforeAll
     public static void setup(){
